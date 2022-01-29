@@ -1435,6 +1435,10 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 	bottom: 45px;
 }
 
+.fit-vids-style {
+	height: 0;
+}
+
 /* Media Queries
 -------------------------------------------------------------- */
 @media only screen and (min-width: 1930px) {
