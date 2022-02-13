@@ -159,7 +159,7 @@ input { line-height: normal; }
 button, input, select, textarea { font-size: 100%; line-height: inherit; margin: 0; vertical-align: baseline; }
 input,
 textarea { font-size: 1em; max-width: 100%; background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Removing the inner shadow on iOS inputs */ }
-textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ vertical-align: top; /* Improves readability and alignment in all browsers */ }
+textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ vertical-align: top; /* Improves readability and alignment in all browsers */ resize: none; }
 input[type="checkbox"] { display: inline; }
 button,
 input[type="button"],
@@ -1437,6 +1437,40 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 
 .fit-vids-style {
 	height: 0;
+}
+
+.feedback {
+	display: grid;
+	place-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	transition: opacity 0.3s ease-out;
+}
+
+.feedback .successful, .feedback .failed {
+	width: fit-content;
+	color: #FEFEFE;
+	font-size: 2rem;
+	padding: 1rem 1.5rem;
+	border-radius: 0.25rem;
+	pointer-events: none;
+}
+
+.feedback .successful::selection, .feedback .failed::selection {
+	background-color: transparent;
+}
+
+.feedback .successful {
+	background-color: #00C292;
+}
+
+.feedback .failed {
+	background-color: #DD4B39;
 }
 
 /* Media Queries

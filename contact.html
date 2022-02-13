@@ -62,7 +62,7 @@
             <div class="wrap-inner">          
                 <div id="site-logo" class="clearfix">
                     <div id="site-logo-inner">
-                        <a href="index.html" title="Construction" rel="home" class="main-logo">
+                        <a href="index.html" title="AFRIGUE ASTORIA" rel="home" class="main-logo">
                             <img src="assets/img/afrigue-astoria-logo.png" alt="Afrigue Astoria Limited" data-retina="assets/img/afrigue-astoria-logo.png" data-width="204" data-height="30">
                         </a>
                     </div>
@@ -165,6 +165,32 @@
                                             </div>
                                         </div>
                                     </form><!-- /.wprt-contact-form -->
+                                    <!-- <?php
+                                    
+                                        $msg = "";
+
+                                        if (isset($_POST['submit'])) {
+
+                                            $name = htmlspecialchars($_POST['name']);
+                                            $email = htmlspecialchars($_POST['email']);
+                                            $inquiry = htmlspecialchars($_POST['inquiry']);
+                                            $to = "info@heritagehebronglobal.com";
+                                            $subject = "Afrigue Astoria - " . htmlspecialchars($_POST['subject']);
+                                            $headers = "MIME-Version: 1.0" . "\r\n";
+                                            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                                            $headers .= "From: ".$name."<".$email.">"."\r\n";
+                                            $message = wordwrap($inquiry, 70);
+
+                                            mail($to, $subject, $message, $headers);
+
+                                            if (mail($to, $subject, $message, $headers)) {
+                                                $msg = "<p class=\"successful\">Message delivered <i class=\"fa fa-check\"></i></p>";
+                                            } else {
+                                                $msg = "<p class=\"failed\">Message not delivered <i class=\"fa fa-remove\"></i></p>";
+                                            }
+                                        }
+
+                                    ?> -->
                                 </div><!-- /.col-md-8 -->
 
                                 <div class="col-md-12">
@@ -217,6 +243,8 @@
     </div>
 </footer>
 
+<!-- <div class="feedback"><?php echo $msg; ?></div> -->
+
 <!-- Bottom -->
 <div id="bottom" class="clearfix style-1">
     <div id="bottom-bar-inner" class="wprt-container">
@@ -251,6 +279,7 @@
 <script type="text/javascript" src="assets/js/validate.js"></script>
 
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 
 </html>
