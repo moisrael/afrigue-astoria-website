@@ -260,7 +260,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-family: "Montserrat", sans-serif; color: #252525; line-height: 1.5; margin: 0 0 10px; font-weight: 500; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+h6 { font-family: "Montserrat", sans-serif; color: #252525; line-height: 1.5; margin: 0 0 10px; font-weight: 500; text-rendering: optimizeLegibility; -webkit-font-smsans-oothing: antialiased; }
 
 h1 { font-size: 2.428em; } /* 34px */
 h2 { font-size: 2.142em; } /* 30px */
@@ -368,7 +368,7 @@ p.dropcap span.first-letter { font-size: 55px; float: left; color: #ffc925; text
 .letter-spacing-8px { letter-spacing: 8px; }
 
 .font-family-body { font-family: 'Lato', sans-serif !important; }
-.font-family-heading { font-family: 'Montserrat', serif !important; }
+.font-family-heading { font-family: 'Montserrat', sans-serif !important; }
 
 .font-size-13 { font-size: 13px; }
 .font-size-14 { font-size: 14px; }
@@ -438,6 +438,10 @@ p.dropcap span.first-letter { font-size: 55px; float: left; color: #ffc925; text
 
 /* No Sidebar */
 .no-sidebar #site-content { width: 100% !important; max-width: none !important; float: none !important; }
+
+/* Flex */
+.d-flex { display: flex; }
+.align-items-center { align-items: center; }
 
 /* Hero Background SlideShow
 -------------------------------------------------------------- */
