@@ -15,7 +15,7 @@
                         <li class="address item">Technical Floor, Suit 001, Wing A Bolingo Hotel and Towers, Independence Avenue, Area 10 Garki Abuja-Nigeria</li>
                         <li class="phone item"><a href="tel:+1249060009086">+124 906 000 9086</a></li>
                         <li class="whatsapp item"><a href="https://wa.me/2348098769013">+234 809 876 9013</a></li>
-                        <li class="email item"><a href="mailto:contact@afrigueastoria.ng@gmail.com">contact@afrigueastoria.ng@gmail.com</a></li>
+                        <li class="email item"><a href="mailto:info@afrigueastoria.com">info@afrigueastoria.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +66,7 @@
 <script type="text/javascript" src="assets/js/owlCarousel.js"></script>
 <script type="text/javascript" src="assets/js/cube.portfolio.js"></script>
 
-<script type="text/javascript" src="assets/js/validate.js"></script>
+<!-- <script type="text/javascript" src="assets/js/validate.js"></script> -->
 
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>

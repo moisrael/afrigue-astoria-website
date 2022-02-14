@@ -43,13 +43,13 @@
                                     <div class="wprt-spacer" data-desktop="15" data-mobi="0" data-smobi="0"></div>
 
                                     <h5>E-mail address</h5>
-                                    <p><a href="mailto:contact@afrigueastoria.ng@gmail.com">contact@afrigueastoria.ng@gmail.com</a></p>
+                                    <p><a href="mailto:info@afrigueastoria.com">info@afrigueastoria.com</a></p>
 
                                     <div class="wprt-spacer" data-desktop="0" data-mobi="10" data-smobi="10"></div>
                                 </div><!-- /.col-md-4 -->
 
                                 <div class="col-md-8">
-                                    <form class="wprt-contact-form" method="post" action="#">
+                                    <form class="wprt-contact-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                         <div class="inner">
                                             <div class="left-side">
                                                 <div class="input-wrap">
@@ -65,7 +65,7 @@
                                                     <textarea class="" tabindex="5" placeholder="Message *" name="message" id="message" required></textarea>
                                                 </div>
                                                 <div class="send-wrap">
-                                                    <input type="submit" value="SEND MESSAGE" id="submit" name="submit" class="submit">
+                                                    <input type="submit" value="SEND MESSAGE" id="submit" name="send-message" class="submit">
                                                 </div>
                                             </div>
                                         </div>
@@ -75,12 +75,12 @@
                                         // No-AJAX message feedback
                                         $form_submission_feedback = "";
 
-                                        if (isset($_POST['submit'])) {
+                                        if (isset($_POST['send-message'])) {
 
                                             $name = htmlspecialchars($_POST['name']);
                                             $email = htmlspecialchars($_POST['email']);
                                             $inquiry = htmlspecialchars($_POST['inquiry']);
-                                            $to = "info@heritagehebronglobal.com";
+                                            $to = "info@afrigueastoria.com";
                                             $subject = "Afrigue Astoria - " . htmlspecialchars($_POST['subject']);
                                             $headers = "MIME-Version: 1.0" . "\r\n";
                                             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
